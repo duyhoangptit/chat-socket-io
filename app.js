@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 
+const redis = require('./configs/redis.config');
 const mongoose = require('./configs/mongoose.config');
 const indexRouter = require('./routes/index.route')
 const chatRouter = require('./routes/chat.route')
